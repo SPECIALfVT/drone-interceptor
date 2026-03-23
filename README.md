@@ -36,8 +36,24 @@ python main.py
 ```
 
 ## Concepts Used
-
 - Object-Oriented Programming (OOP)
 - Math — distance calculation, unit vectors
 - File I/O — logging to `.txt`
 - Python standard libraries: `math`, `random`, `datetime`
+- Unit testing with `pytest`
+- CI/CD with GitHub Actions
+
+## Testing
+
+Unit tests are written with `pytest` covering:
+- Distance calculation accuracy
+- Fuel consumption on movement
+- Edge case: already at target
+- Edge case: fuel runs out before reaching target
+
+Run tests locally:
+```bash
+pytest
+```
+
+Tests run automatically on every push via GitHub Actions.
